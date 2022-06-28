@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+.content-card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  margin: 10rem auto;
+  height: 430px;
+  max-width: 300px;
+  width: 100%;
+  padding: 1.2rem;
+}
+.content-card:hover .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 239, 231, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.content-card:hover h3{
+    color: hsl(178, 100%, 50%);
+}
+.content-card:hover .name{
+    color: hsl(178, 100%, 50%);
+    
+}
+
+.img-wrapper {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-wrapper img {
+  border-radius: 10px;
+}
+.img-wrapper .overlay {
+  display: none;
+}
+
+/* .img-wrapper:hover .overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 239, 231, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+} */
+
+.price-and-days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+.price-and-days > div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-top: 1.2rem;
+}
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+}
+
+.eth-price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+.days-left {
+  color: hsl(215, 51%, 70%);
+}
+.botton-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.7rem;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 1px solid #fff;
+}
+.name-wrapper {
+  color: hsl(215, 51%, 70%);
+}
+.name {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
